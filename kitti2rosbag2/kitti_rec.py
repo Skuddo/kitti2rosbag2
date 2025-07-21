@@ -68,12 +68,54 @@ class Kitti_Odom(Node):
             converter_options = rosbag2_py._storage.ConverterOptions('', '')
             self.writer.open(storage_options, converter_options)
 
-        left_img_topic_info = rosbag2_py._storage.TopicMetadata(name='/camera2/left/image_raw', type='sensor_msgs/msg/Image', serialization_format='cdr')
-        right_img_topic_info = rosbag2_py._storage.TopicMetadata(name='/camera3/right/image_raw', type='sensor_msgs/msg/Image', serialization_format='cdr')
-        odom_topic_info = rosbag2_py._storage.TopicMetadata(name='/car/base/odom', type='nav_msgs/msg/Odometry', serialization_format='cdr')
-        path_topic_info = rosbag2_py._storage.TopicMetadata(name='/car/base/odom_path', type='nav_msgs/msg/Path', serialization_format='cdr')
-        left_cam_topic_info = rosbag2_py._storage.TopicMetadata(name='/camera2/left/camera_info', type='sensor_msgs/msg/CameraInfo', serialization_format='cdr')
-        right_cam_topic_info = rosbag2_py._storage.TopicMetadata(name='/camera3/right/camera_info', type='sensor_msgs/msg/CameraInfo', serialization_format='cdr')
+        left_img_topic_info = rosbag2_py._storage.TopicMetadata(
+            id=0,
+            name='/camera2/left/image_raw',
+            type='sensor_msgs/msg/Image',
+            serialization_format='cdr',
+            offered_qos_profiles=[],
+            type_description_hash=''
+        )       
+        right_img_topic_info = rosbag2_py._storage.TopicMetadata(
+            id=0,
+            name='/camera3/right/image_raw',
+            type='sensor_msgs/msg/Image',
+            serialization_format='cdr',
+            offered_qos_profiles=[],
+            type_description_hash=''
+        )       
+        odom_topic_info = rosbag2_py._storage.TopicMetadata(
+            id=0,
+            name='/car/base/odom',
+            type='nav_msgs/msg/Odometry',
+            serialization_format='cdr',
+            offered_qos_profiles=[],
+            type_description_hash=''
+        )       
+        path_topic_info = rosbag2_py._storage.TopicMetadata(
+            id=0,
+            name='/car/base/odom_path',
+            type='nav_msgs/msg/Path',
+            serialization_format='cdr',
+            offered_qos_profiles=[],
+            type_description_hash=''
+        )       
+        left_cam_topic_info = rosbag2_py._storage.TopicMetadata(
+            id=0,
+            name='/camera2/left/camera_info',
+            type='sensor_msgs/msg/CameraInfo',
+            serialization_format='cdr',
+            offered_qos_profiles=[],
+            type_description_hash=''
+        )       
+        right_cam_topic_info = rosbag2_py._storage.TopicMetadata(
+            id=0,
+            name='/camera3/right/camera_info',
+            type='sensor_msgs/msg/CameraInfo',
+            serialization_format='cdr',
+            offered_qos_profiles=[],
+            type_description_hash=''
+        )
 
         self.writer.create_topic(left_img_topic_info)
         self.writer.create_topic(right_img_topic_info)

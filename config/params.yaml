@@ -1,8 +1,7 @@
 kitti_rec:
   ros__parameters:
-    sequence: 2
-    data_dir: '/home/parallels/Documents/kitti_dataset/dataset'
-    odom_dir: '/home/parallels/Documents/kitti_dataset/dataset_2'
-    bag_dir : '/home/parallels/Documents/kitti_dataset/my_bag'
+    sequence: 0
+    data_dir: '/mnt/f/datasets/KITTI/kitti-odom/data_odometry_color/dataset/'
+    odom_dir: '/mnt/f/datasets/KITTI/kitti-odom/data_odometry_poses/'
+    bag_dir : '/mnt/f/datasets/KITTI/kitti-odom/kitti-fixed/00'
     odom : True
-  

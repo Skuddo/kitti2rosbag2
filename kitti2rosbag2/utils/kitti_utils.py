@@ -8,8 +8,8 @@ DATA_EXTENSION = ".png"
 DATASET_DIR = "/media/psf/SSD/DRONES_LAB/kitti_dataset/dataset" # Fix this line
 ODOM_DIR = '/media/psf/SSD/DRONES_LAB/kitti_dataset/dataset_2'  # Fix this line
 SEQUENCE = 0
-LEFT_IMG_FOLDER = "image_0"
-RIGHT_IMG_FOLDER = "image_1"
+LEFT_IMG_FOLDER = "image_2"
+RIGHT_IMG_FOLDER = "image_3"
 # DISTANCE = 0.54meters
 
 class KITTIOdometryDataset():
